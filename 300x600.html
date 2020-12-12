@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        outline: none;
+        padding: 50px 0;
+        font-family: 'Goldman', cursive;
+        background: #313030;
+    }
+    .mauto{
+        margin: auto;
+    }
+    .p10{
+        padding: 10px;
+    }
+    .shadow{
+        box-shadow: 0px 0px 6px 1px #000;
+    }
+    .s640x360{
+        width: 640px; height: 360px;
+    }
+    .ads_box{
+        overflow: hidden;
+        margin-bottom: 50px;
+        background: #fff
+    }
+    .logo-box{
+        width: 200px;
+/*        height: 20%;*/
+        box-sizing: border-box;
+    }
+    img{
+        width: 100%;
+        
+/*        height: 100%;*/
+    }
+    .dflex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .img-box{
+        width: 50%;
+/*        height: 70%;*/
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .content-box{
+        width: 50%;
+        box-sizing: border-box;
+    }
+    h2{
+        font-size: 1.2em;
+        font-weight: 500;
+        text-align: center;
+    }
+    ul{}
+    ul li{
+        list-style:inside square;
+    }
+    a.btn{
+        background: #4eb9ea;
+        color: #fff;
+        display: inline-block;
+        padding: 10px;
+        font-weight: 700;
+        transition: all linear .3s;
+        animation: glow 3s infinite;
+/*        animation-delay: 2s;*/
+        animation-direction: alternate-reverse;
+        border-radius: 3px;
+    }
+    @keyframes glow{
+        0%{
+/*            transform: scale(1)*/
+        }
+        50%{
+            background: #8f0fc7;
+        }
+        100%{
+/*            transform: scale(1.5);*/
+            background: red;
+        }
+    }
+    a.btn:hover{
+/*        transform: scale(1.5);*/
+        animation: none;
+    }
+    
+    
+    .s300x600{
+        width: 300px;
+        height: 600px;
+        position: relative;
+        box-sizing: border-box;
+        background: #1f698b;
+        color: #fff;
+    }
+    .nav{
+        position: fixed;
+        bottom: 10px;
+        background: #fff;
+        width: 100%;
+        padding: 10px 30px;
+        justify-content: space-between;
+    }
+    .nav li{
+        list-style: none;
+        background: #1f80ac;
+        display: inline-block; padding: 10px;
+        
+    }
+    .nav li a{
+        color: #fff;
+        display: block;
+    }
+    .nav li.active{
+        background: red !important;
+    }
+    .s300X600img{
+        width: 100%;
+/*        overflow: hidden;*/
+        height: 40%;
+        clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
+/*        border: 10px solid red;*/
+        position: relative;
+        padding: 10px;
+        background: #fff
+    }
+  .s300X600img:before {
+    content: '';
+    position: absolute;
+    width: 136%;
+    height: 14px;
+    background: orange;
+    transform: rotate(-13deg);
+    left: -10px;
+    right: 0;
+    bottom: 48px;
+    box-shadow: 0px 1px 6px 1px #5d5d5d;
+}
+    
+    .s300X600img img{
+        width: 80%
+    }
+    .s300X600cbox {
+    height: 32%;
+    width: 100%;
+        
+        
+    /* transform: rotate(45deg); */
+}
+    .s300X600ft{
+        background: #fff;
+        height: 150px;
+        width: 100%;
+        clip-path: polygon(0 0, 100% 44%, 100% 100%, 0% 100%);
+        border-bottom: inside 3px solid orange
+    }
+    .ft_logo{
+        width: 80%;
+        flex: wrap;
+        
+    }
+    .ft_logo img{
+        width: 80%;
+        margin-top: 44px;
+        margin-left: 20px;
+    }
+   
+    .s300X600btn {
+    position: absolute;
+    right: 27px;
+    bottom: 115px;
+}
+    </style>
+</head>
+<body>
+
+<div class="ads_box shadow mauto s300x600">
+   <div class="s300X600img ads_img">
+       <img src="img/IMG_7535-removebg-preview.png" alt="" class="mySlides w3-animate-right">
+       <img src="img/20190815_10_1-removebg-preview.png" alt="" class="mySlides w3-animate-bottom">
+   </div>
+ <div class=" s300X600cbox">
+     <h2>Ladda upp din 3D-modell</h2>
+     <ul>
+                <li>Pris direkt</li>
+                <li>Snabb leverans</li>
+                <li>5 dagar</li>
+                <li>CNC</li>
+                <li>Enkelt</li>
+                <li>Snabbt</li>
+                <li>Smidigt</li>
+                
+            </ul>
+            <a class="btn s300X600btn" target="_blank" href="https://www.instacnc.com/">VISIT SITE</a>
+ </div>
+ <div class="s300X600ft">
+    <div class="ft_logo">
+         <img src="img/Insta_Main_Large.png" alt="">
+    </div>
+ </div>
+</div>
+    
+    <ul class="nav">
+       <li ><a href="index.html" class="btn_nav ">640X360 Size</a></li>
+        <li class="active"><a href="300x600.html" class="btn_nav">300X600 Size</a></li>
+         <li><a href="300x300.html" class="btn_nav">300X300 Size</a></li>
+          <li><a href="360x360.html" class="btn_nav">360X360 Size</a></li>
+           <li><a href="360x135.html" class="btn_nav">360X135 Size</a></li>
+         <li><a href="320x320.html" class="btn_nav">320X320 Size</a></li>
+    </ul>
+
+    <script>
+    
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+};
+        
+    
+    </script>
+  
+</body>
+</html>
